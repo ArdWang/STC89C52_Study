@@ -1,0 +1,126 @@
+C51 COMPILER V9.01   I2C                                                                   04/05/2021 13:30:32 PAGE 1   
+
+
+C51 COMPILER V9.01, COMPILATION OF MODULE I2C
+OBJECT MODULE PLACED IN i2c.OBJ
+COMPILER INVOKED BY: E:\Program_Soft\C51Keil\C51\BIN\C51.EXE i2c.c BROWSE DEBUG OBJECTEXTEND
+
+line level    source
+
+   1          #include "i2c.h"
+   2          
+   3          void Delay10us(void)   //误差 0us
+   4          {
+   5   1          unsigned char a,b;
+   6   1          for(b=1;b>0;b--)
+   7   1              for(a=2;a>0;a--);
+   8   1      }
+   9          
+  10          //起始信号函数
+  11          void I2cStart(){
+  12   1         SDA=1;
+  13   1         Delay10us();
+  14   1         SCL=1;
+  15   1         Delay10us();    //大于4.7us
+  16   1         SDA=0;
+  17   1         Delay10us();
+  18   1         SCL=0;
+  19   1         Delay10us();
+  20   1      }
+  21          
+  22          //停止信号
+  23          void I2cStop(){
+  24   1         SDA=0;
+  25   1         Delay10us();
+  26   1         SCL=1;
+  27   1         Delay10us();    //大于4.7us
+  28   1         SDA=1;
+  29   1         Delay10us();
+  30   1      }
+  31          
+  32          // 发送数据      I2C
+  33          unsigned char I2cSendByte(unsigned char dat){
+  34   1              unsigned char a=0,b=0;
+  35   1              for(a=0;a<8;a++){
+  36   2                      SDA=dat>>7;
+  37   2                      dat=dat<<1;
+  38   2                      Delay10us();
+  39   2                      SCL=1;
+  40   2                      Delay10us();
+  41   2                      SCL=0;
+  42   2                      Delay10us();
+  43   2              }
+  44   1              SDA=1;
+  45   1              Delay10us();
+  46   1              SCL=1;
+  47   1              while(SDA){
+  48   2                      b++;
+  49   2                      if(b>200){
+  50   3                              SCL=0;
+  51   3                              Delay10us();
+  52   3                              return 0;
+  53   3                      }               
+  54   2              }
+  55   1              SCL=0;
+C51 COMPILER V9.01   I2C                                                                   04/05/2021 13:30:32 PAGE 2   
+
+  56   1              Delay10us();
+  57   1              return 1;               
+  58   1      }
+  59          
+  60          // 接受函数      I2C
+  61          unsigned char I2cReadByte(){
+  62   1              unsigned char a=0,dat=0;
+  63   1              SDA=1;
+  64   1              Delay10us();
+  65   1              for(a=0;a<8;a++){
+  66   2                      SCL=1;
+  67   2                      Delay10us();
+  68   2                      dat<<=1;  //dat=0 0      00     01 10
+  69   2                      dat|=SDA;                  // 0 | 1 =1 01  11
+  70   2                      Delay10us();
+  71   2                      SCL=0;
+  72   2                      Delay10us();
+  73   2              }
+  74   1      
+  75   1              return dat;
+  76   1      }
+  77          
+  78          
+  79          void At24c02Write(unsigned char addr, unsigned char dat){
+  80   1              I2cStart();
+  81   1              I2cSendByte(0xa0);
+  82   1              I2cSendByte(addr);
+  83   1              I2cSendByte(dat);
+  84   1              I2cStop();      
+  85   1      }
+  86          
+  87          
+  88          unsigned char At24c02Read(unsigned char addr){
+  89   1              unsigned char num;
+  90   1              I2cStart();
+  91   1              I2cSendByte(0xa0);
+  92   1              I2cSendByte(addr);
+  93   1              I2cStart();
+  94   1              I2cSendByte(0xa1);
+  95   1              num=I2cReadByte();
+  96   1              I2cStop();      
+  97   1              return num;
+  98   1      }
+  99          
+ 100          
+ 101          
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    201    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

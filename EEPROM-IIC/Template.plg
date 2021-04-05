@@ -1,0 +1,77 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Project:</h2>
+F:\GitHub\BottomStudy\STC89C52_Study\EEPROM-IIC\Template.uvproj
+Project File Date:  03/19/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+linking...
+Program Size: data=9.0 xdata=0 code=68
+creating hex file from "Template"...
+"Template" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=9.0 xdata=0 code=17
+creating hex file from "Template"...
+"Template" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling i2c.c...
+linking...
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_DELAY?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?CO?MAIN
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AT24C02WRITE?I2C
+*** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
+    SEGMENT: ?PR?_AT24C02READ?I2C
+Program Size: data=10.0 xdata=0 code=240
+creating hex file from "Template"...
+"Template" - 0 Error(s), 4 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  DISP
+    MODULE:  main.obj (MAIN)
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DISP
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 00A9H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DISP
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 00D1H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DISP
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 00F9H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DISP
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0112H
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DISP
+    MODULE:  main.obj (MAIN)
+    ADDRESS: 0224H
+Program Size: data=11.0 xdata=0 code=744
+creating hex file from "Template"...
+"Template" - 0 Error(s), 6 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+compiling i2c.c...
+linking...
+Program Size: data=14.0 xdata=0 code=743
+creating hex file from "Template"...
+"Template" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=14.0 xdata=0 code=743
+creating hex file from "Template"...
+"Template" - 0 Error(s), 0 Warning(s).

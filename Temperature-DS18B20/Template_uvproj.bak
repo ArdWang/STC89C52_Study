@@ -351,11 +351,6 @@
               <FileType>1</FileType>
               <FilePath>.\main.c</FilePath>
             </File>
-            <File>
-              <FileName>i2c.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\i2c.c</FilePath>
-            </File>
           </Files>
         </Group>
       </Groups>

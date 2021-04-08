@@ -13,5 +13,7 @@
 
 sbit DSPORT=P3^7;
 
+int Ds18b20ReadTemp();
+
 
 #endif

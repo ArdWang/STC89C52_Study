@@ -177,12 +177,12 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>1</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>20</ColumnNumber>
+      <ColumnNumber>24</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>73</TopLine>
-      <CurrentLine>73</CurrentLine>
+      <TopLine>1</TopLine>
+      <CurrentLine>9</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
@@ -193,20 +193,20 @@
       <FileType>1</FileType>
       <tvExp>1</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>49</ColumnNumber>
+      <ColumnNumber>10</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>71</TopLine>
-      <CurrentLine>90</CurrentLine>
+      <TopLine>13</TopLine>
+      <CurrentLine>41</CurrentLine>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\i2c.c</PathWithFileName>
-      <FilenameWithoutPath>i2c.c</FilenameWithoutPath>
+      <PathWithFileName>.\temp.c</PathWithFileName>
+      <FilenameWithoutPath>temp.c</FilenameWithoutPath>
     </File>
   </Group>
 
   <AlienFiles>
-    <PathWithFilename>F:\GitHub\BottomStudy\STC89C52_Study\EEPROM-IIC\i2c.h</PathWithFilename>
+    <PathWithFilename>F:\GitHub\BottomStudy\STC89C52_Study\Temperature-DS18B20\temp.h</PathWithFilename>
     <TopLine>1</TopLine>
-    <CurrentLine>12</CurrentLine>
+    <CurrentLine>13</CurrentLine>
     <Constant>0</Constant>
     <WindowPosition>
       <length>0</length>
@@ -1570,25 +1570,25 @@
     <ActiveMDIGroup>0</ActiveMDIGroup>
     <MDIGroup>
       <Size>100</Size>
-      <ActiveTab>0</ActiveTab>
+      <ActiveTab>1</ActiveTab>
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
-          <ColumnNumber>20</ColumnNumber>
-          <TopLine>73</TopLine>
-          <CurrentLine>73</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>.\i2c.c</Name>
-          <ColumnNumber>49</ColumnNumber>
-          <TopLine>71</TopLine>
-          <CurrentLine>90</CurrentLine>
-        </Doc>
-        <Doc>
-          <Name>I2C.H</Name>
-          <ColumnNumber>46</ColumnNumber>
+          <ColumnNumber>24</ColumnNumber>
           <TopLine>1</TopLine>
-          <CurrentLine>12</CurrentLine>
+          <CurrentLine>9</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\temp.c</Name>
+          <ColumnNumber>10</ColumnNumber>
+          <TopLine>13</TopLine>
+          <CurrentLine>41</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>TEMP.H</Name>
+          <ColumnNumber>22</ColumnNumber>
+          <TopLine>1</TopLine>
+          <CurrentLine>13</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

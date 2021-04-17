@@ -165,17 +165,83 @@
       <GroupNumber>1</GroupNumber>
       <FileNumber>1</FileNumber>
       <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <tvExp>0</tvExp>
       <Focus>0</Focus>
-      <ColumnNumber>26</ColumnNumber>
+      <ColumnNumber>13</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>140</TopLine>
-      <CurrentLine>140</CurrentLine>
+      <TopLine>53</TopLine>
+      <CurrentLine>75</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>.\main.c</PathWithFileName>
       <FilenameWithoutPath>main.c</FilenameWithoutPath>
     </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>2</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <Focus>0</Focus>
+      <ColumnNumber>13</ColumnNumber>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <TopLine>41</TopLine>
+      <CurrentLine>41</CurrentLine>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\XPT2046.c</PathWithFileName>
+      <FilenameWithoutPath>XPT2046.c</FilenameWithoutPath>
+    </File>
   </Group>
+
+  <AlienFiles>
+    <PathWithFilename>D:\BaiduNetdiskDownload\单片机学习\单片机底层学习\V2.0新版\实验程序\基础实验例程\实验20：AD模数转换\电位器AD值\XPT2046.H</PathWithFilename>
+    <TopLine>15</TopLine>
+    <CurrentLine>23</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
+
+  <AlienFiles>
+    <PathWithFilename>D:\BaiduNetdiskDownload\单片机学习\单片机底层学习\V2.0新版\实验程序\基础实验例程\实验20：AD模数转换\电位器AD值\template.M51</PathWithFilename>
+    <TopLine>7</TopLine>
+    <CurrentLine>8</CurrentLine>
+    <Constant>0</Constant>
+    <WindowPosition>
+      <length>0</length>
+      <flags>0</flags>
+      <showCmd>0</showCmd>
+      <MinPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MinPosition>
+      <MaxPosition>
+        <xPos>0</xPos>
+        <yPos>0</yPos>
+      </MaxPosition>
+      <NormalPosition>
+        <Top>0</Top>
+        <Left>0</Left>
+        <Right>0</Right>
+        <Bottom>0</Bottom>
+      </NormalPosition>
+    </WindowPosition>
+  </AlienFiles>
 
   <WinLayout>
     <sActiveDebugView>Default</sActiveDebugView>
@@ -1522,9 +1588,27 @@
       <Documents>
         <Doc>
           <Name>.\main.c</Name>
+          <ColumnNumber>13</ColumnNumber>
+          <TopLine>53</TopLine>
+          <CurrentLine>75</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>.\XPT2046.c</Name>
+          <ColumnNumber>13</ColumnNumber>
+          <TopLine>41</TopLine>
+          <CurrentLine>41</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>XPT2046.H</Name>
           <ColumnNumber>26</ColumnNumber>
-          <TopLine>140</TopLine>
-          <CurrentLine>140</CurrentLine>
+          <TopLine>15</TopLine>
+          <CurrentLine>23</CurrentLine>
+        </Doc>
+        <Doc>
+          <Name>D:\BaiduNetdiskDownload\单片机学习\单片机底层学习\V2.0新版\实验程序\基础实验例程\实验20：AD模数转换\电位器AD值\template.M51</Name>
+          <ColumnNumber>28</ColumnNumber>
+          <TopLine>7</TopLine>
+          <CurrentLine>8</CurrentLine>
         </Doc>
       </Documents>
     </MDIGroup>

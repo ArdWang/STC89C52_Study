@@ -1,0 +1,15 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+F:\GitHub\BottomStudy\STC89C52_Study\实验21：DA数模转换\template.uvproj
+Project File Date:  03/18/2021
+
+<h2>Output:</h2>
+Build target 'Target 1'
+compiling main.c...
+linking...
+Program Size: data=15.1 xdata=0 code=157
+creating hex file from "template"...
+"template" - 0 Error(s), 0 Warning(s).
